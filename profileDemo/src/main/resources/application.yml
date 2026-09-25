@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: profileDemo
+
+server:
+  port: 8080
+
+app:
+  welcome:
+    message: Hello everyone, Welcome to my site
+    code: 200
+    users: Gauri, Kavya, Ganesh

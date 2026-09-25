@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+    <!-- 
+    <bean id="paymentService" class="com.example.XMLBasedConfigDemo.PaymentService">
+        <constructor-arg name="type" value="UPI"/>
+        <constructor-arg name="retrycnt" value="2"/>
+    </bean>
+
+    <bean id="orderService" class="com.example.XMLBasedConfigDemo.OrderService">
+        <property name="paymentServiceBean" ref="paymentService" />
+    </bean>
+    <bean id="orderService1" class="com.example.XMLBasedConfigDemo.OrderService">
+        <constructor-arg ref="paymentService"/>
+    </bean> 
+    <bean id="orderService2" class="com.example.XMLBasedConfigDemo.OrderService"/> 
+    -->
+
+    <!-- Active bean definitions -->
+    <!-- <bean id="upiPayment" class="com.example.XMLBasedConfigDemo.payment.UPIPayment" />
+    <bean id="cardPayment" class="com.example.XMLBasedConfigDemo.payment.CardPayment" />
+    <bean id="orderService" class="com.example.XMLBasedConfigDemo.OrderService">
+        <constructor-arg ref="cardPayment"/>
+    </bean>  -->
+    <!-- <bean id="userService" class="com.example.XMLBasedConfigDemo.UserService" >
+    <constructor-arg > -->
+    <!-- <list>
+    <value>gauri</value>
+    <value>ga</value>
+    <value>ri</value>
+    <value>gri</value>
+    </list> -->
+
+    <!-- <map>
+    <entry key="1" value="gsd"/>
+    <entry key="2" value="gd"/>
+    <entry key="3" value="gs"/>
+    <entry key="4" value="sd"/>
+    </map>
+    </constructor-arg>
+    </bean> -->
+
+    <bean id="userService" 
+    class="com.example.XMLBasedConfigDemo.UserService" 
+    init-method="init"
+    destroy-method="cleanup"
+    />
+    <!-- </bean> -->
+
+</beans>
