@@ -9,7 +9,7 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>AOPDemo</artifactId>
+	<artifactId>AopPointcutAndProxies</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name/>
 	<description/>
@@ -41,11 +41,12 @@
 			<scope>test</scope>
 		</dependency>
 
-	<dependency>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-aspectj</artifactId>
-		<scope>compile</scope>
-	</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-aspectj</artifactId>
+			<scope>compile</scope>
+		</dependency>
+		
 	</dependencies>
 
 	<build>
